@@ -12,6 +12,9 @@
 
     --Rose-00: hsl(332, 51%, 32%);
     --Rose-0: hsl(330, 100%, 98%);
+
+    --font1:Young Serif;
+    --font2:outfit;
 }
 
 *{
@@ -23,8 +26,52 @@ body{
     font-family: outfit, sans-serif;
 }
 
+.card{
+    padding: 200px 32px 0 32px;
 
-/* 8112034873 */
+}
+
+.card_img{
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    right: 0
+}
+
+.title, .subtitle{
+    font-family:var(--font1);
+}
+
+.card_description{
+    margin-bottom: 20px;
+}
+
+.paragraph{
+    color: var(--Stone-600);
+}
+
+.preparation-title{
+    color: var(--Rose-00);
+}
+
+.subtitle{
+    color: var(--Brown-800);   
+}
+
+.card_time{
+    background-color: var(--Rose-0);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.preparation_list{
+    /* outline: 1px solid red; */
+    padding: 15px;
+}
+.list-bold{
+    font-weight: bold;
+}
 
 
 
