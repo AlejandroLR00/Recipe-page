@@ -23,7 +23,9 @@
 
 body{
     font-size: 16px;
-    font-family: outfit, sans-serif;
+    font-family: outfit, sans-serif; 
+    color: var(--Stone-600);  
+
 }
 
 .card{
@@ -43,6 +45,10 @@ body{
     font-family:var(--font1);
 }
 
+.title{
+    color: var(--Stone-900);
+}
+
 .card_description{
     margin-bottom: 20px;
 }
@@ -51,13 +57,25 @@ body{
     color: var(--Stone-600);
 }
 
+.subtitle{
+    color: var(--Brown-800);   
+}
+
 .preparation-title{
     color: var(--Rose-00);
 }
 
-.subtitle{
-    color: var(--Brown-800);   
+.preparation_list{
+    width: 200px;
 }
+
+.preparation_list, .ingredients_list{
+    list-style-position: outside;
+}
+.preparation_list .list_item, .ingredients_list .list_item{
+    padding-left: 20px;
+}
+
 
 .card_time{
     background-color: var(--Rose-0);
@@ -65,22 +83,84 @@ body{
     border-radius: 10px;
 }
 
-.preparation_list{
-    /* outline: 1px solid red; */
-    padding: 15px;
-}
 .list-bold{
     font-weight: bold;
+    color: var(--Stone-900);
+}
+
+.card_time{
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+.card_ingredients{
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+.line{
+    width: 100%;
+    border-bottom: .1em solid var(--Stone-600);
+    margin-bottom: 20px;
 }
 
 
+.subtitle{
+    margin-bottom: 12px;
+}
 
+.instruction_list{
+    counter-reset: item;
+    position: relative;
+}
 
+.instruction_list li{
+    display: block;
+    margin-bottom: 10px;
+}
+.instruction_list li::before{
+    content: counter(item) ". ";
+    counter-increment: item;
+    color: var(--Brown-800);
+    font-weight: bold;
+    position: absolute;
+    left: 0px;
+}
 
+.card_instruction{
+    margin-bottom: 20px;
+}
 
+.card_nutrition .paragraph{
+    padding-bottom: 20px;
+}
 
+.table{
+    width: 60px;
+}
 
+.table-red{
+    color: var(--Brown-800);
+    font-weight: bold;
+    width: 56px;
+}
+.table, .table-red{
+    margin: 10px 0;
+}
 
+.table-kal{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--Stone-600);
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+}
+
+.attribution {
+    margin-top: 50px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
