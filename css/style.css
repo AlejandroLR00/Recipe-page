@@ -25,12 +25,35 @@ body{
     font-size: 16px;
     font-family: outfit, sans-serif; 
     color: var(--Stone-600);  
+    background-color: var(--Stone-100);
+}
 
+@media (min-width:1300px){
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
 }
 
 .card{
+    /* margin-top: 100px; */
     padding: 200px 32px 0 32px;
+    background-color: var(--White);
+}
+@media (min-width:760px){
+    .card{
+        margin-top: 160px;
+    }
+}
+@media (min-width:1300px){
 
+    .card{
+        width: 736px;
+        padding: 40px;
+        border-radius: 20px;
+    }
 }
 
 .card_img{
@@ -39,6 +62,12 @@ body{
     top: 0;
     left: 0;
     right: 0
+}
+@media (min-width:1300px){
+    .card_img{
+        position: relative;
+        width: 740px;
+    }
 }
 
 .title, .subtitle{
