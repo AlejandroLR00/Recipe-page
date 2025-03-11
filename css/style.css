@@ -97,6 +97,11 @@ body{
 .preparation_list{
     width: 200px;
 }
+@media (min-width:1300px){
+    .preparation_list{
+        width: 400px;
+    }
+}
 
 .preparation_list, .ingredients_list{
     list-style-position: outside;
